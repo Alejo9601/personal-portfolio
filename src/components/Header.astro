@@ -1,14 +1,16 @@
 ---
-
+import Logo from "./Logo.astro";
 ---
 
 <header class="flex h-20 justify-center">
    <div
-      class="flex justify-between max-w-5xl xl:max-w-6xl h-full w-full p-5 items-center bg-white dark:bg-black"
+      class="flex justify-between max-w-5xl xl:max-w-6xl h-full w-full p-5 items-center bg-white dark:bg-inherit"
    >
-      <img src="" alt="Personal Logo" />
+      <Logo />
       <a
-         class="flex items-center gap-2 h-10 px-6 bg-black dark:bg-white dark:text-black text-white rounded-3xl cursor-pointer"
+         class="flex items-center gap-2 w-auto h-10 px-6 bg-black dark:bg-white dark:text-black text-white rounded-3xl cursor-pointer font-medium"
+         href="https://drive.google.com/file/d/1cJhy2wciribekFL0_B-CadDyx79zpp_6/view?usp=drive_link"
+         target="_blank"
       >
          <svg
             xmlns="http://www.w3.org/2000/svg"
