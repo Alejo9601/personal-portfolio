@@ -1,9 +1,15 @@
 ---
-const { bgImg } = Astro.props;
+const { bgImg, logoImg } = Astro.props;
 ---
 
 <div class="col-span-2 row-span-2 py-14 rounded-3xl relative overflow-hidden">
    <div class="flex flex-col items-center">
+      <div class="flex items-center z-[1]">
+         <img class="w-20 h-20" src={logoImg} alt="Logo" />
+         <span class="text-center text-white text-lg font-bold leading-5">
+            Municipalidad 28 <br /> de Noviembre
+         </span>
+      </div>
       <p
          class="leading-5 mt-2 z-[1] text-black dark:text-white text-center font-medium"
       >
@@ -11,7 +17,7 @@ const { bgImg } = Astro.props;
       </p>
    </div>s
    <img
-      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-60"
+      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-50"
       src={bgImg}
       alt="Enterprise Logo"
    />
