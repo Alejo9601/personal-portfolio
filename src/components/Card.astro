@@ -1,23 +1,32 @@
 ---
-const { bgImg, logoImg } = Astro.props;
+import CardBtn from "./CardBtn.astro";
+
+const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
 ---
 
-<div class="col-span-2 row-span-2 py-14 rounded-3xl relative overflow-hidden">
-   <div class="flex flex-col items-center">
+<div
+   class="col-span-2 row-span-2 py-14 px-14 rounded-3xl relative overflow-hidden"
+>
+   <div class="flex flex-col items-center h-full">
       <div class="flex items-center z-[1]">
          <img class="w-20 h-20" src={logoImg} alt="Logo" />
          <span class="text-center text-white text-lg font-bold leading-5">
-            Municipalidad 28 <br /> de Noviembre
+            {eName}
          </span>
       </div>
       <p
          class="leading-5 mt-2 z-[1] text-black dark:text-white text-center font-medium"
       >
-         Systems Analyst - Java Developer <br /> Jan. 2018 - Jan. 2019
+         {rolName}
+         <br />
+         {dates}
       </p>
+      <div class="mt-auto z-[2]">
+         <CardBtn placeToVisit="Municipalidad" />
+      </div>
    </div>
    <img
-      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-50"
+      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-25"
       src={bgImg}
       alt="Enterprise Logo"
    />
