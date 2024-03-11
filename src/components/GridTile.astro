@@ -1,0 +1,9 @@
+---
+const { propClasses } = Astro.props;
+---
+
+<div
+   class=`flex flex-col bg-white dark:bg-slate-700 dark:text-white text-black overflow-hidden rounded-3xl ${propClasses}`
+>
+   <slot />
+</div>

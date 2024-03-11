@@ -1,10 +1,10 @@
 ---
-import Tile from "./Tile.astro";
+import Tile from "./GridTile.astro";
 import AboutBtn from "./AboutBtn.astro";
 ---
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
-   <div class="col-span-4 row-span-2 overflow-hidden rounded-3xl relative">
+   <Tile propClasses="col-span-4 row-span-2 relative">
       <img
          src="src/assets/Foto-Portada.webp"
          class="w-full h-full object-cover absolute z-0"
@@ -20,18 +20,16 @@ import AboutBtn from "./AboutBtn.astro";
             <AboutBtn textBtn="Email" />
          </div>
       </div>
-   </div>
-   <div
-      class="flex flex-col justify-between col-span-2 bg-white dark:bg-slate-700 p-7 dark:text-white text-black rounded-3xl"
-   >
+   </Tile>
+   <Tile propClasses="col-span-2 p-7 justify-between">
       <span class="text-2xl font-bold">About</span>
       <p>
          Web developer with experience in designing, developing and maintaining
          front-end web applications.
       </p>
-   </div>
-   <Tile>
-      <div class="flex justify-center text-7xl font-bold gap-1">
+   </Tile>
+   <Tile propClasses="items-center justify-center gap-2">
+      <div class="flex text-7xl font-bold gap-1">
          <span>+</span>
          <span>1</span>
       </div>
