@@ -1,17 +1,15 @@
 ---
-import SectionTitle from "./SectionTitle.astro";
+import SectionContainer from "./SectionContainer.astro";
 import GridTile from "./GridTile.astro";
+const description = "You can see here all of my projects";
+const title = "Projects";
 ---
 
-<section>
-   <SectionTitle
-      title="Projects"
-      description="You can see here all of my projects"
-   />
+<SectionContainer title={title} description={description}>
    <div class="grid grid-cols-8 auto-rows-[140px] gap-4">
       <GridTile propClasses="col-span-4 row-span-3" />
       <GridTile propClasses="col-span-4 row-span-2" />
       <GridTile propClasses="col-span-4 row-span-3" />
       <GridTile propClasses="col-span-4 row-span-2" />
    </div>
-</section>
+</SectionContainer>

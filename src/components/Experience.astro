@@ -1,12 +1,11 @@
 ---
-import SectionTitle from "./SectionTitle.astro";
 import Card from "./Card.astro";
+import SectionContainer from "./SectionContainer.astro";
 const description = "You can see here all of my experience as a programmer";
 const title = "Experience";
 ---
 
-<section class="flex flex-col">
-   <SectionTitle title={title} description={description} />
+<SectionContainer title={title} description={description}>
    <div class="grid grid-cols-6 auto-rows-[260px] w-full gap-4">
       <Card
          bgImg="src/assets/Municipalidad28.webp"
@@ -30,4 +29,4 @@ const title = "Experience";
          dates="Jan. 2018 - Jan. 2019"
       />
    </div>
-</section>
+</SectionContainer>
