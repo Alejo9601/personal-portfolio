@@ -1,6 +1,9 @@
 ---
 import Tile from "./GridTile.astro";
 import AboutBtn from "./AboutBtn.astro";
+import LinkedInSVG from "./LinkedInSVG.astro";
+import EmailSVG from "./EmailSVG.astro";
+import GithubSVG from "./GithubSVG.astro";
 ---
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
@@ -14,10 +17,16 @@ import AboutBtn from "./AboutBtn.astro";
          <p class="leading-9 font-medium text-lg">
             Systems Analyst - FullStack Developer
          </p>
-         <div class="flex gap-2">
-            <AboutBtn textBtn="Linkedin" />
-            <AboutBtn textBtn="Github" />
-            <AboutBtn textBtn="Email" />
+         <div class="flex gap-2 mt-1">
+            <AboutBtn textBtn="Linkedin">
+               <LinkedInSVG />
+            </AboutBtn>
+            <AboutBtn textBtn="Github">
+               <GithubSVG />
+            </AboutBtn>
+            <AboutBtn textBtn="Email">
+               <EmailSVG />
+            </AboutBtn>
          </div>
       </div>
    </Tile>
