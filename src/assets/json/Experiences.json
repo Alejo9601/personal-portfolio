@@ -1,0 +1,24 @@
+
+[
+    {
+        "bgImg": "Municipalidad28.webp",
+        "logoImg": "src/assets/img/escudo28denoviembre.png",
+        "eName": "Municipality of Veintiocho de Noviembre",
+        "rolName": "Systems Analyst - Java Developer",
+        "dates": "Jan. 2018 - Jan. 2019"
+    },
+    {
+        "bgImg": "programming.webp",
+        "logoImg": "src/assets/img/EscudoProvSantaCruz.png",
+        "eName": "Provincial Education Council",
+        "rolName": "Applied Computer Science Professor",
+        "dates": "Jan. 2018 - Jan. 2019"
+    },
+    {
+        "bgImg": "computing.webp",
+        "logoImg": "src/assets/img/EscudoProvSantaCruz.png",
+        "eName": "Provincial Education Council",
+        "rolName": "IT Office Manager",
+        "dates": "Jan. 2018 - Jan. 2019"
+    }
+]

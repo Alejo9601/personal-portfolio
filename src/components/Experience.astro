@@ -1,32 +1,23 @@
 ---
 import Card from "./Card.astro";
 import SectionContainer from "./SectionContainer.astro";
+import Experiences from "../assets/json/Experiences.json";
 const description = "You can see here all of my experience as a programmer";
 const title = "Experience";
 ---
 
 <SectionContainer title={title} description={description}>
    <div class="grid grid-cols-6 auto-rows-[260px] w-full gap-4">
-      <Card
-         bgImg="src/assets/img/Municipalidad28.webp"
-         logoImg="src/assets/img/escudo28denoviembre.png"
-         eName="Municipality of Veintiocho de Noviembre"
-         rolName="Systems Analyst - Java Developer"
-         dates="Jan. 2018 - Jan. 2019"
-      />
-      <Card
-         bgImg="src/assets/img/programming.webp"
-         logoImg="src/assets/img/EscudoProvSantaCruz.png"
-         eName="Provincial Education Council"
-         rolName="Applied Computer Science Professor"
-         dates="Jan. 2018 - Jan. 2019"
-      />
-      <Card
-         bgImg="src/assets/img/computing.webp"
-         logoImg="src/assets/img/EscudoProvSantaCruz.png"
-         eName="Provincial Education Council"
-         rolName="IT Office Manager"
-         dates="Jan. 2018 - Jan. 2019"
-      />
+      {
+         Experiences.map((exp) => (
+            <Card
+               bgImg={`src/assets/img/${exp.bgImg}`}
+               logoImg={exp.logoImg}
+               eName={exp.eName}
+               rolName={exp.rolName}
+               dates={exp.dates}
+            />
+         ))
+      }
    </div>
 </SectionContainer>
