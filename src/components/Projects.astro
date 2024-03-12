@@ -1,15 +1,40 @@
 ---
 import SectionContainer from "./SectionContainer.astro";
 import GridTile from "./GridTile.astro";
+import ProjectDescription from "./ProjectDescription.astro";
 const description = "You can see here all of my projects";
 const title = "Projects";
 ---
 
 <SectionContainer title={title} description={description}>
    <div class="grid grid-cols-8 auto-rows-[140px] gap-4">
-      <GridTile propClasses="col-span-4 row-span-3" />
-      <GridTile propClasses="col-span-4 row-span-2" />
-      <GridTile propClasses="col-span-4 row-span-3" />
-      <GridTile propClasses="col-span-4 row-span-2" />
+      <GridTile propClasses="col-span-4 row-span-3 p-7">
+         <ProjectDescription
+            projName="Project 1"
+            projDesc="My project you can see it here"
+            projTechs={["Tech 1", "Tech 2", "Tech 3"]}
+         />
+      </GridTile>
+      <GridTile propClasses="col-span-4 row-span-2 p-7">
+         <ProjectDescription
+            projName="Project 1"
+            projDesc="My project you can see it here"
+            projTechs={["Tech 1", "Tech 2", "Tech 3"]}
+         />
+      </GridTile>
+      <GridTile propClasses="col-span-4 row-span-3 p-7">
+         <ProjectDescription
+            projName="Project 1"
+            projDesc="My project you can see it here"
+            projTechs={["Tech 1", "Tech 2", "Tech 3"]}
+         />
+      </GridTile>
+      <GridTile propClasses="col-span-4 row-span-2 p-7">
+         <ProjectDescription
+            projName="Project 1"
+            projDesc="My project you can see it here"
+            projTechs={["Tech 1", "Tech 2", "Tech 3"]}
+         />
+      </GridTile>
    </div>
 </SectionContainer>
