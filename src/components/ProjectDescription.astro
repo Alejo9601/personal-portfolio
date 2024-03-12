@@ -1,5 +1,5 @@
 ---
-const { projName, projDesc, projTechs } = Astro.props;
+const { projName, projDesc, projTechs, imgSource } = Astro.props;
 const { kindOfExperience = "WORK EXPERIENCE" } = Astro.props;
 ---
 
@@ -33,4 +33,9 @@ const { kindOfExperience = "WORK EXPERIENCE" } = Astro.props;
          }
       </div>
    </div>
+   <img
+      src={imgSource}
+      alt="project"
+      class="rounded-2xl absolute w-full top-48 left-10"
+   />
 </div>
