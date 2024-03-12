@@ -5,7 +5,7 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
 ---
 
 <div
-   class="col-span-2 row-span-2 py-14 px-14 rounded-3xl relative overflow-hidden"
+   class="col-span-2 row-span-2 py-14 px-14 rounded-3xl relative overflow-hidden on-hover-el"
 >
    <div class="flex flex-col items-center h-full">
       <div class="flex flex-col items-center z-[1] gap-5">
@@ -23,9 +23,13 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
          <CardBtn />
       </div>
    </div>
-   <img
-      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-25"
-      src={bgImg}
-      alt="Enterprise Logo"
-   />
+   /**This div is only for temporary purpuses the function OnProjectHover needs to
+   be adapted to be usefull. */
+   <div>
+      <img
+         class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-25 transition-all duration-300"
+         src={bgImg}
+         alt="Enterprise Logo"
+      />
+   </div>
 </div>
