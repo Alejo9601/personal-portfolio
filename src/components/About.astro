@@ -7,7 +7,7 @@ import GithubSVG from "./GithubSVG.astro";
 ---
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
-   <Tile propClasses="col-span-4 row-span-2 relative">
+   <Tile propClasses="col-span-4 row-span-2 relative anim-up">
       <img
          src="src/assets/img/Foto-Portada.webp"
          class="w-full h-full object-cover absolute z-0"
@@ -30,14 +30,15 @@ import GithubSVG from "./GithubSVG.astro";
          </div>
       </div>
    </Tile>
-   <Tile propClasses="col-span-2 p-7 justify-between">
-      <span class="text-2xl font-bold">About</span>
+   <Tile propClasses="col-span-2 p-7 justify-between anim-up anim-pause-1">
+      <span class="text-2xl
+      font-bold">About</span>
       <p>
          Web developer with experience in designing, developing and maintaining
          front-end web applications.
       </p>
    </Tile>
-   <Tile propClasses="items-center justify-center gap-2">
+   <Tile propClasses="items-center justify-center gap-2 anim-up anim-pause-1">
       <div class="flex text-7xl font-bold gap-1">
          <span>+</span>
          <span>1</span>
@@ -46,7 +47,7 @@ import GithubSVG from "./GithubSVG.astro";
          Years of experience
       </p>
    </Tile>
-   <Tile>
+   <Tile propClasses="anim-up anim-pause-1">
       <div class="">
          <img
             class="w-full h-full opacity-70"

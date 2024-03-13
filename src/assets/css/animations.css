@@ -10,7 +10,7 @@
 @keyframes anim-up {
    from {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(30px);
    }
    to {
       opacity: 1;
@@ -32,7 +32,7 @@
 @keyframes anim-left {
    from {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(30px);
    }
    to {
       opacity: 1;
@@ -43,7 +43,7 @@
 @keyframes anim-right {
    from {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(-30px);
    }
    to {
       opacity: 1;
@@ -77,8 +77,12 @@
    animation-name: anim-fade-in;
 }
 
+.anim-pause-1 {
+   animation-delay: 0.1s;
+}
+
 .anim-pause-2 {
-   animation-delay: 2s;
+   animation-delay: 0.7s;
 } /* la animacion empieza en 2 seg. */
 .anim-pause-3 {
    animation-delay: 3s;

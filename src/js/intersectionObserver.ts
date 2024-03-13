@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", ()=> {
     const options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.50,
+        threshold: 0.25,
     }
 
     
