@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle.astro";
 const { title, description } = Astro.props;
 ---
 
-<section class="flex flex-col gap-10">
+<section class="flex flex-col gap-10 section paused">
    <SectionTitle title={title} description={description} />
    <slot />
 </section>
