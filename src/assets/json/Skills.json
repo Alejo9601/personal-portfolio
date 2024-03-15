@@ -1,0 +1,46 @@
+[
+    {
+        "name": "HTML5",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+    },
+    {
+        "name": "CSS3",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+    },
+    {
+        "name": "Javascript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+    },
+    {
+        "name": "Typescript",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+    },
+    {
+        "name": "React",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+        "name": "Next.js",
+        "img": "https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+    },
+    {
+        "name": "Vite",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"
+    },
+    {
+        "name": "Tailwind",
+        "img": "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+    },
+    {
+        "name": "Node.js",
+        "img": "https://www.svgrepo.com/show/355140/node.svg"
+    },
+    {
+        "name": "MongoDB",
+        "img": "https://www.svgrepo.com/show/331488/mongodb.svg"
+    },
+    {
+        "name": "MySQL",
+        "img": "https://www.svgrepo.com/show/306453/mysql.svg"
+    }
+]
