@@ -4,6 +4,7 @@ import AboutBtn from "./AboutBtn.astro";
 import LinkedInSVG from "./LinkedInSVG.astro";
 import EmailSVG from "./EmailSVG.astro";
 import GithubSVG from "./GithubSVG.astro";
+import Avatar from "./Avatar.astro";
 ---
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
@@ -47,7 +48,9 @@ import GithubSVG from "./GithubSVG.astro";
          Years of experience
       </p>
    </Tile>
-   <Tile propClasses="anim-pause-1 delayed">
+   <Tile
+      propClasses="anim-pause-1 delayed relative items-center justify-center"
+   >
       <div class="">
          <img
             class="w-full h-full grayscale opacity-60"
@@ -55,5 +58,6 @@ import GithubSVG from "./GithubSVG.astro";
             alt="Map"
          />
       </div>
+      <Avatar />
    </Tile>
 </section>
