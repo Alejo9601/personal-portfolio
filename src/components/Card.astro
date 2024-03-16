@@ -9,7 +9,11 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
 >
    <div class="flex flex-col items-center h-full">
       <div class="flex flex-col items-center z-[1] gap-5">
-         <img class="w-20 h-20" src={logoImg} alt="Logo" />
+         <img
+            class="w-20 h-20 grayscale-[70%] rounded-full"
+            src={logoImg}
+            alt="Logo"
+         />
          <span class="text-center text-white text-xl font-bold leading-5">
             {eName}
          </span>
