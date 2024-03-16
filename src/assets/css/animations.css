@@ -28,3 +28,19 @@
 .slide-track {
    animation: scroll 20s linear infinite;
 }
+
+@keyframes pulsing {
+   0% {
+      transform: scale(100%);
+   }
+   50% {
+      transform: scale(110%);
+   }
+   100% {
+      transform: scale(100%);
+   }
+}
+
+.anim-pulse {
+   animation: pulsing 1s ease-in-out infinite;
+}
