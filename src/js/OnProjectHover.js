@@ -1,13 +1,14 @@
 window.onload = () => {
    const projectCards = document.getElementsByClassName("on-hover-el");
 
-   Array.from(projectCards).forEach((card) => {
-      const imgContainer = card.lastElementChild;
-      card.addEventListener("mouseover", () => {
-         imgContainer.lastElementChild.classList.add("scale-[1.025]");
+   Array.from(projectCards).forEach((onHoverEl) => {
+      const img = onHoverEl.lastElementChild;
+
+      onHoverEl.addEventListener("mouseover", () => {
+         img.classList.add("scale-[1.025]");
       });
-      card.addEventListener("mouseleave", () => {
-         imgContainer.lastElementChild.classList.remove("scale-[1.025]");
+      onHoverEl.addEventListener("mouseleave", () => {
+         img.classList.remove("scale-[1.025]");
       });
    });
 };
