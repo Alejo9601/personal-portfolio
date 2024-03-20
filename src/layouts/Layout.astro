@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import Header from "../components/Header.astro";
+import "../assets/css/animations.css";
 ---
 
 <!doctype html>
@@ -21,7 +22,6 @@ import Header from "../components/Header.astro";
          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
          rel="stylesheet"
       />
-      <link rel="stylesheet" href="../assets/css/animations.css" />
       <script src="../js/OnProjectHover.ts"></script>
       <script src="../js/intersectionObserver.ts"></script>
       <meta name="generator" content={Astro.generator} /><title>
