@@ -1,5 +1,6 @@
 ---
 import Tile from "./GridTile.astro";
+import Paragraph from "../components/Paragraph.astro";
 import AboutBtn from "./AboutBtn.astro";
 import LinkedInSVG from "./LinkedInSVG.astro";
 import EmailSVG from "../components/EmailSVG.astro";
@@ -38,10 +39,10 @@ import MapImg from "../assets/img/28DeNoviembre.png";
    </Tile>
    <Tile propClasses="xl:col-span-2 col-span-6 p-7 gap-2 delayed">
       <span class="text-2xl font-bold">About</span>
-      <p class="opacity-70">
+      <Paragraph>
          Web developer with experience in designing, developing and maintaining
          front-end web applications.
-      </p>
+      </Paragraph>
    </Tile>
    <Tile
       propClasses="xl:col-span-1 col-span-3 items-center justify-center gap-2 delayed "

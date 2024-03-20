@@ -1,11 +1,17 @@
+---
+import Paragraph from "./Paragraph.astro";
+---
+
 <footer
    class="flex flex-col lg:flex-row items-center justify-center sm:gap-4 lg:justify-between px-10 h-40 w-full bg-slate-900 rounded-3xl dark:text-white text-black animated inactive delayed"
 >
    <div>
-      <p>Juarez Alejandro - Systems Analyst / FullStack Programmer</p>
-      <p>Made with Astro and Vanilla Javascript</p>
+      <Paragraph>
+         Juarez Alejandro - Systems Analyst / FullStack Programmer
+      </Paragraph>
+      <Paragraph>Made with Astro and Vanilla Javascript</Paragraph>
    </div>
    <div>
-      <p>Last update: March 2024</p>
+      <Paragraph> Last update: March 2024 </Paragraph>
    </div>
 </footer>
