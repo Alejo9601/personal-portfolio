@@ -2,17 +2,15 @@
 import Tile from "./GridTile.astro";
 import AboutBtn from "./AboutBtn.astro";
 import LinkedInSVG from "./LinkedInSVG.astro";
-import EmailSVG from "./EmailSVG.astro";
+import EmailSVG from "../components/EmailSVG.astro";
 import GithubSVG from "./GithubSVG.astro";
 import Avatar from "./Avatar.astro";
+import CoverImg from "../assets/img/FotoPortada.webp";
 ---
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
    <Tile propClasses="xl:col-span-4 row-span-2 relative col-span-6">
-      <img
-         src="src/assets/img/FotoPortada.webp"
-         class="w-full h-full object-cover absolute"
-      />
+      <img src={CoverImg.src} class="w-full h-full object-cover absolute" />
       <div class="absolute z-[1] flex flex-col w-full p-5 bottom-0 text-white">
          <span class="text-3xl font-bold leading-7"> Alejandro Juarez</span>
          <p class="leading-9 font-medium text-lg">

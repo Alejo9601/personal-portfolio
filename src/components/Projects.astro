@@ -1,6 +1,9 @@
 ---
 import SectionContainer from "./SectionContainer.astro";
 import GridTile from "./GridTile.astro";
+import GiffyAllImg from "../assets/img/Giffyall.webp";
+import MyUnsplashedImg from "../assets/img/MyUnsplashed.webp";
+import MarvelSiteImg from "../assets/img/Marvelsite.webp";
 import ProjectDescription from "./ProjectDescription.astro";
 const description = "You can see here all of my projects";
 const title = "Projects";
@@ -13,7 +16,7 @@ const title = "Projects";
             projName="SisConv"
             projDesc="Native application made for a gubernamental institution."
             projTechs={["Java", "MySQL", "Hibernate", "UML"]}
-            imgSource="src/assets/img/Giffyall.webp"
+            imgSource={GiffyAllImg.src}
          />
       </GridTile>
       <GridTile
@@ -30,7 +33,7 @@ const title = "Projects";
             projName="My Unsplashed"
             projDesc="A personal project of a gallery."
             projTechs={["React.js", "Styled Components"]}
-            imgSource="src/assets/img/MyUnsplashed.webp"
+            imgSource={MyUnsplashedImg.src}
          />
       </GridTile>
       <GridTile
@@ -40,7 +43,7 @@ const title = "Projects";
             projName="Marvelsite"
             projDesc="A personal project that uses official Marvel API."
             projTechs={["React.js", "Styled Components"]}
-            imgSource="src/assets/img/Marvelsite.webp"
+            imgSource={MarvelSiteImg.src}
          />
       </GridTile>
    </div>
