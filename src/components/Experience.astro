@@ -2,6 +2,12 @@
 import Card from "./Card.astro";
 import SectionContainer from "./SectionContainer.astro";
 import Experiences from "../assets/json/Experiences.json";
+import proj1Img from "../assets/img/Municipalidad28.webp";
+import proj2Img from "../assets/img/programming.webp";
+import proj3Img from "../assets/img/computing.webp";
+
+const images = [proj1Img, proj2Img, proj3Img];
+
 const description = "You can see here all of my experience as a programmer";
 const title = "Experience";
 ---
@@ -11,7 +17,7 @@ const title = "Experience";
       {
          Experiences.map((exp) => (
             <Card
-               bgImg={`../assets/img/${exp.bgImg}`}
+               bgImg={images[exp.bgImg].src}
                logoImg={exp.logoImg}
                eName={exp.eName}
                rolName={exp.rolName}
