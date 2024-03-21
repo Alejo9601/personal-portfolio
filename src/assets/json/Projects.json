@@ -1,0 +1,30 @@
+[
+    {
+        "projName": "GiffyAll",
+        "projUrl": "https://giffyall.vercel.app/",
+        "projDesc": "A personal project that uses official Giphy API.",
+        "projTechs": ["React.js", "Styled Components"],
+        "projImg": 0
+    },
+    {
+        "projName": "Unknown",
+        "projUrl": "",
+        "projDesc": "A personal project of a gallery.",
+        "projTechs": ["React.js", "Styled Components"],
+        "projImg": 1
+    },
+    {
+        "projName": "My Unsplashed",
+        "projUrl": "https://myunsplashed.vercel.app/",
+        "projDesc": "A personal project of a gallery.",
+        "projTechs": ["React.js", "Styled Components"],
+        "projImg": 2
+    },
+    {
+        "projName": "Marvelsite",
+        "projUrl": "https://marvelsite.vercel.app/",
+        "projDesc": "A personal project that uses official Marvel API.",
+        "projTechs": ["React.js", "Styled Components"],
+        "projImg": 3
+    }
+]

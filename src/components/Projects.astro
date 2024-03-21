@@ -1,9 +1,12 @@
 ---
+import MyProjects from "../assets/json/Projects.json";
 import SectionContainer from "./SectionContainer.astro";
 import GridTile from "./GridTile.astro";
+
 import GiffyAllImg from "../assets/img/Giffyall.webp";
 import MyUnsplashedImg from "../assets/img/MyUnsplashed.webp";
 import MarvelSiteImg from "../assets/img/Marvelsite.webp";
+
 import ProjectDescription from "./ProjectDescription.astro";
 const description = "You can see here all of my projects";
 const title = "Projects";
@@ -13,9 +16,10 @@ const title = "Projects";
    <div class="grid grid-cols-8 auto-rows-[380px] lg:auto-rows-[140px] gap-4">
       <GridTile propClasses="xl:col-span-4 col-span-8 lg:row-span-3 row-span-1">
          <ProjectDescription
-            projName="SisConv"
-            projDesc="Native application made for a gubernamental institution."
-            projTechs={["Java", "MySQL", "Hibernate", "UML"]}
+            projName={MyProjects[0].projName}
+            projDesc={MyProjects[0].projDesc}
+            projTechs={MyProjects[0].projTechs}
+            projUrl={MyProjects[0].projUrl}
             imgSource={GiffyAllImg.src}
          />
       </GridTile>
@@ -23,16 +27,19 @@ const title = "Projects";
          propClasses="xl:col-span-4 col-span-8  lg:row-span-2 row-span-1"
       >
          <ProjectDescription
-            projName="Marvelsite"
-            projDesc="A personal project that uses official Marvel API."
-            projTechs={["React.js", "Styled Components"]}
+            projName={MyProjects[1].projName}
+            projDesc={MyProjects[1].projDesc}
+            projTechs={MyProjects[1].projTechs}
+            projUrl={MyProjects[1].projUrl}
+            imgSource={MarvelSiteImg.src}
          />
       </GridTile>
       <GridTile propClasses="xl:col-span-4 col-span-8 lg:row-span-3 row-span-1">
          <ProjectDescription
-            projName="My Unsplashed"
-            projDesc="A personal project of a gallery."
-            projTechs={["React.js", "Styled Components"]}
+            projName={MyProjects[2].projName}
+            projDesc={MyProjects[2].projDesc}
+            projTechs={MyProjects[2].projTechs}
+            projUrl={MyProjects[2].projUrl}
             imgSource={MyUnsplashedImg.src}
          />
       </GridTile>
@@ -40,9 +47,10 @@ const title = "Projects";
          propClasses="xl:col-span-4  col-span-8 lg:row-span-2 row-span-1"
       >
          <ProjectDescription
-            projName="Marvelsite"
-            projDesc="A personal project that uses official Marvel API."
-            projTechs={["React.js", "Styled Components"]}
+            projName={MyProjects[3].projName}
+            projDesc={MyProjects[3].projDesc}
+            projTechs={MyProjects[3].projTechs}
+            projUrl={MyProjects[3].projUrl}
             imgSource={MarvelSiteImg.src}
          />
       </GridTile>
