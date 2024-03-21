@@ -1,4 +1,6 @@
 ---
+import ProjectLink from "./ProjectLink.astro";
+
 const { projName, projDesc, projTechs, imgSource } = Astro.props;
 const { kindOfExperience = "WORK EXPERIENCE" } = Astro.props;
 ---
@@ -35,6 +37,7 @@ const { kindOfExperience = "WORK EXPERIENCE" } = Astro.props;
          }
       </div>
    </div>
+   <ProjectLink />
    <img
       src={imgSource}
       alt="project"
