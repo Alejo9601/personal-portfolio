@@ -53,19 +53,21 @@ import MapImg from "../assets/img/28DeNoviembre.png";
          Years of experience
       </p>
    </Tile>
-   <Tile
-      propClasses="xl:col-span-1 col-span-3 anim-pause-1 delayed relative items-center justify-center"
-   >
-      <div class="">
+   <Tile propClasses="xl:col-span-1 col-span-3 delayed">
+      <a
+         class="flex relative w-full h-full items-center justify-center"
+         target="_blank"
+         href="https://maps.app.goo.gl/SgVhhQBWeUfE5xay5"
+      >
          <img
             class="w-full h-full grayscale opacity-60"
             src={MapImg.src}
             alt="Map"
          />
-      </div>
-      <Avatar />
-      <span class="absolute bottom-5 text-sm font-medium text-slate-900">
-         From Santa Cruz, AR
-      </span>
+         <Avatar />
+         <span class="absolute bottom-5 text-sm font-medium text-slate-900">
+            From Santa Cruz, AR
+         </span>
+      </a>
    </Tile>
 </section>
