@@ -1,0 +1,10 @@
+---
+const { side } = Astro.props;
+const gradient = side == "left" ? "bg-gradient-to-r" : "bg-gradient-to-l";
+const position = side == "left" ? "left-0" : "right-0";
+---
+
+<div
+   class=`absolute ${position} ${gradient} h-full w-28 from-slate-900 to-transparent z-[1]`
+>
+</div>
