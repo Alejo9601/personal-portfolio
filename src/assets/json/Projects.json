@@ -4,23 +4,23 @@
       "projUrl": "https://giffyall.vercel.app/",
       "projDesc": "A personal project that uses official Giphy API.",
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Experience",
+      "projType": "Personal Project",
       "projImg": 0
-   },
-   {
-      "projName": "Unknown",
-      "projUrl": "",
-      "projDesc": "A personal project of a gallery.",
-      "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Experience",
-      "projImg": 1
    },
    {
       "projName": "My Unsplashed",
       "projUrl": "https://myunsplashed.vercel.app/",
       "projDesc": "A personal project of a gallery.",
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Experience",
+      "projType": "Personal Project",
+      "projImg": 1
+   },
+   {
+      "projName": "Eccombuy",
+      "projUrl": "https://ecommbuy.netlify.app/",
+      "projDesc": "A team project of an E-Commerce web.",
+      "projTechs": ["HTML", "CSS", "Vanilla Javascript"],
+      "projType": "Team Project",
       "projImg": 2
    },
    {
@@ -28,7 +28,7 @@
       "projUrl": "https://marvelsite.vercel.app/",
       "projDesc": "A personal project that uses official Marvel API.",
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Experience",
+      "projType": "Personal Project",
       "projImg": 3
    }
 ]
