@@ -18,7 +18,7 @@
    {
       "projName": "Eccombuy",
       "projUrl": "https://ecommbuy.netlify.app/",
-      "projDesc": "A team project of an E-Commerce web.",
+      "projDesc": "An E-commerce web for a sales business.",
       "projTechs": ["HTML", "CSS", "Vanilla Javascript"],
       "projType": "Team Project",
       "projImg": 2
