@@ -2,7 +2,7 @@
    {
       "projName": "GiffyAll",
       "projUrl": "https://giffyall.vercel.app/",
-      "projDesc": "A personal project that uses official Giphy API.",
+      "projDesc": "App to search funny gif´s using the official Giphy API.",
       "projTechs": ["React.js", "Styled Components"],
       "projType": "Personal Project",
       "projImg": 0
@@ -10,7 +10,7 @@
    {
       "projName": "My Unsplashed",
       "projUrl": "https://myunsplashed.vercel.app/",
-      "projDesc": "A personal project of a gallery.",
+      "projDesc": "A gallery to show a photographer´s work.",
       "projTechs": ["React.js", "Styled Components"],
       "projType": "Personal Project",
       "projImg": 1
@@ -26,7 +26,7 @@
    {
       "projName": "Marvelsite",
       "projUrl": "https://marvelsite.vercel.app/",
-      "projDesc": "A personal project that uses official Marvel API.",
+      "projDesc": "App for consulting Marvel characters using it´s official API.",
       "projTechs": ["React.js", "Styled Components"],
       "projType": "Personal Project",
       "projImg": 3
