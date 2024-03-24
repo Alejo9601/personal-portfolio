@@ -1,11 +1,11 @@
 ---
 import SectionContainer from "./SectionContainer.astro";
 import SkillsCarousel from "./SkillsCarousel.astro";
+
+const description = "Some of the technologies I've been working with";
+const title = "Skills";
 ---
 
-<SectionContainer
-   title="Skills"
-   description="These are the technologies i know"
->
+<SectionContainer title={title} description={description}>
    <SkillsCarousel />
 </SectionContainer>
