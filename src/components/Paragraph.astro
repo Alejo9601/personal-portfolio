@@ -1,3 +1,7 @@
-<p class="text-base opacity-70">
+---
+const { propClasses } = Astro.props;
+---
+
+<p class=`text-base opacity-70 ${propClasses}`>
    <slot />
 </p>

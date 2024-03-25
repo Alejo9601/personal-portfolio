@@ -5,18 +5,18 @@ import Paragraph from "./Paragraph.astro";
 ---
 
 <footer
-   class="flex flex-col lg:flex-row items-center justify-center sm:gap-4 lg:justify-between px-10 h-40 w-full bg-slate-900 rounded-3xl dark:text-white text-black animated inactive delayed"
+   class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-0 lg:justify-between px-10 h-40 w-full bg-slate-900 rounded-3xl dark:text-white text-black animated inactive delayed"
 >
    <div>
-      <Paragraph>
-         Juarez Alejandro - Systems Analyst / FullStack Programmer
-      </Paragraph>
-      <Paragraph>Made with Astro and Vanilla Javascript</Paragraph>
+      <Paragraph> Juarez Alejandro - Full Stack Developer </Paragraph>
+      <Paragraph>Made with Astro and pure Javascript</Paragraph>
    </div>
    <div
       class="flex flex-row items-center justify-center w-full lg:w-auto lg:flex-col gap-3"
    >
-      <div class="flex w-auto lg:w-full justify-end gap-2 text-white">
+      <div
+         class="flex w-auto lg:w-full justify-end gap-2 text-white text-2xl lg:text-base"
+      >
          <a
             class="cursor-pointer"
             href="mailto:alejandro96laboral@gmail.com"
@@ -32,6 +32,8 @@ import Paragraph from "./Paragraph.astro";
             <LinkedInSVG />
          </a>
       </div>
-      <Paragraph> Last update: March 2024 </Paragraph>
+      <Paragraph propClasses="hidden sm:inline">
+         Last update: March 2024
+      </Paragraph>
    </div>
 </footer>
