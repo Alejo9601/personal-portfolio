@@ -10,7 +10,7 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
    <div class="flex flex-col items-center h-full">
       <div class="flex lg:flex-col items-center z-[1] gap-5">
          <img
-            class="w-20 h-20 grayscale-[70%] rounded-full hidden lg:inline"
+            class="w-auto h-20 grayscale-[50%] rounded-lg hidden lg:inline"
             src={logoImg}
             alt="Logo"
          />
@@ -30,7 +30,7 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
       </div>
    </div>
    <img
-      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-45 transition-all duration-300"
+      class="w-full h-full object-cover absolute top-0 z-0 left-0 opacity-40 transition-all duration-300"
       src={bgImg}
       alt="Enterprise Logo"
    />
