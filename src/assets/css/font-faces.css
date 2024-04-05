@@ -1,4 +1,8 @@
 /* latin-ext */
+html {
+   font-display: swap;
+}
+
 @font-face {
    font-family: "Outfit";
    font-weight: 300;
