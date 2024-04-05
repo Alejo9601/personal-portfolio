@@ -12,7 +12,11 @@ import MapImg from "../assets/img/28DeNoviembre.png";
 
 <section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
    <Tile propClasses="xl:col-span-4 row-span-2 relative col-span-6">
-      <img src={CoverImg.src} class="w-full h-full object-cover absolute" />
+      <img
+         src={CoverImg.src}
+         class="w-full h-full object-cover absolute"
+         alt="Cover"
+      />
       <div class="absolute z-[1] flex flex-col w-full p-5 bottom-0 text-white">
          <span class="text-3xl font-bold leading-7"> Alejandro Juarez</span>
          <p class="leading-9 font-medium text-lg">Full Stack Developer</p>
@@ -59,7 +63,7 @@ import MapImg from "../assets/img/28DeNoviembre.png";
          target="_blank"
          href="https://maps.app.goo.gl/SgVhhQBWeUfE5xay5"
       >
-         <img class="w-full h-full grayscale" src={MapImg.src} alt="Map" />
+         <img class="w-full h-full grayscale" src={MapImg.src} alt="Address" />
          <Avatar />
          <span class="absolute bottom-5 text-sm font-medium text-slate-900">
             From Santa Cruz, AR
