@@ -1,6 +1,7 @@
 ---
 import Logo from "./Logo.astro";
 import DownloadCvBtn from "./DownloadCvBtn.astro";
+import DarkModeToggler from "./DarkModeToggler.astro";
 ---
 
 <header
@@ -10,6 +11,9 @@ import DownloadCvBtn from "./DownloadCvBtn.astro";
       class="flex justify-between max-w-5xl xl:max-w-6xl h-full w-full p-5 items-center bg-white dark:bg-inherit"
    >
       <Logo />
-      <DownloadCvBtn />
+      <div class="flex gap-8 items-center">
+         <DarkModeToggler />
+         <DownloadCvBtn />
+      </div>
    </div>
 </header>
