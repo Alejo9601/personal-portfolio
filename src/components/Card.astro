@@ -1,7 +1,7 @@
 ---
 import CardBtn from "./CardBtn.astro";
 
-const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
+const { bgImg, logoImg, eName, rolName, dates, pageLink } = Astro.props;
 ---
 
 <div
@@ -26,7 +26,7 @@ const { bgImg, logoImg, eName, rolName, dates } = Astro.props;
          {dates}
       </p>
       <div class="mt-auto z-[2]">
-         <CardBtn />
+         <CardBtn referenceTo={pageLink} />
       </div>
    </div>
    <img

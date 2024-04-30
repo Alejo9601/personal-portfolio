@@ -1,6 +1,10 @@
+---
+const { referenceTo } = Astro.props;
+---
+
 <a
    class="flex items-center justify-between gap-2 w-auto px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer font-medium"
-   href=""
+   href={referenceTo}
    target="_blank"
 >
    <span>Visit Site</span>

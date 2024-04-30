@@ -1,24 +1,26 @@
-
 [
-    {
-        "bgImg": 0,
-        "logoImg": 0,
-        "eName": "Municipality of Veintiocho de Noviembre",
-        "rolName": "Software Engineer (Final Career Project)",
-        "dates": "Jan. 2018 - Mar. 2019"
-    },
-    {
-        "bgImg": 1,
-        "logoImg": 1,
-        "eName": "Provincial Education Council",
-        "rolName": "Professor of Applied Computer Science",
-        "dates": "May. 2019 - Present"
-    },
-    {
-        "bgImg": 2,
-        "logoImg": 2,
-        "eName": "Provincial Education Council",
-        "rolName": "IT Office Manager",
-        "dates": "May. 2019 - Present"
-    }
+   {
+      "bgImg": 0,
+      "logoImg": 0,
+      "eName": "Municipality of Veintiocho de Noviembre",
+      "rolName": "Software Engineer (Final Career Project)",
+      "dates": "Jan. 2018 - Mar. 2019",
+      "pageLink": "https://educacionsantacruz.gov.ar/"
+   },
+   {
+      "bgImg": 1,
+      "logoImg": 1,
+      "eName": "Provincial Education Council",
+      "rolName": "Professor of Applied Computer Science",
+      "dates": "May. 2019 - Present",
+      "pageLink": "https://educacionsantacruz.gov.ar/"
+   },
+   {
+      "bgImg": 2,
+      "logoImg": 2,
+      "eName": "Provincial Education Council",
+      "rolName": "IT Office Manager",
+      "dates": "May. 2019 - Present",
+      "pageLink": "https://educacionsantacruz.gov.ar/"
+   }
 ]
