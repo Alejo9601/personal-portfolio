@@ -7,11 +7,12 @@ import proj1Img from "../assets/img/programming.jpg";
 import proj2Img from "../assets/img/teaching.jpg";
 import proj3Img from "../assets/img/computing.webp";
 
-import proj1Logo from "../assets/img/escudo28denoviembre.png";
+import veitiochoNovLogo from "../assets/img/mun28nov.jpg";
 import santaCruzLogo from "../assets/img/EscudoProvSantaCruz.png";
+import zourceLogo from "../assets/img/logo.jpg";
 
 const images = [proj1Img, proj2Img, proj3Img];
-const logos = [proj1Logo, santaCruzLogo, santaCruzLogo];
+const logos = [veitiochoNovLogo, santaCruzLogo, zourceLogo];
 
 const description = "My most relevant experiences";
 const title = "Experience";
@@ -24,7 +25,6 @@ const title = "Experience";
             <Card
                bgImg={images[exp.bgImg].src}
                logoImg={logos[exp.logoImg].src}
-               eName={exp.eName}
                rolName={exp.rolName}
                dates={exp.dates}
                pageLink={exp.pageLink}
