@@ -16,19 +16,19 @@
       "projImg": 1
    },
    {
+      "projName": "Patagon Barber",
+      "projUrl": "https://patagon-barber-frontend.vercel.app/",
+      "projDesc": "App for consulting Marvel characters using it´s official API.",
+      "projTechs": ["React.js", "Styled Components"],
+      "projType": "Personal Project",
+      "projImg": 2
+   },
+   {
       "projName": "Eccombuy",
       "projUrl": "https://ecommbuy.netlify.app/",
       "projDesc": "An E-commerce web for a sales business.",
       "projTechs": ["HTML", "CSS", "Vanilla Javascript"],
       "projType": "Team Project",
-      "projImg": 2
-   },
-   {
-      "projName": "Marvelsite",
-      "projUrl": "https://marvelsite.vercel.app/",
-      "projDesc": "App for consulting Marvel characters using it´s official API.",
-      "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Project",
       "projImg": 3
    }
 ]
