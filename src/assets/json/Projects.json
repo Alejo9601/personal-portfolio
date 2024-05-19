@@ -18,15 +18,15 @@
    {
       "projName": "Patagon Barber",
       "projUrl": "https://patagon-barber-frontend.vercel.app/",
-      "projDesc": "App for consulting Marvel characters using it´s official API.",
-      "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Project",
+      "projDesc": "A website build for a barber business.",
+      "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
+      "projType": "Freelance Project",
       "projImg": 2
    },
    {
       "projName": "Eccombuy",
       "projUrl": "https://ecommbuy.netlify.app/",
-      "projDesc": "An E-commerce web for a sales business.",
+      "projDesc": "An E-commerce web template for a sales business.",
       "projTechs": ["HTML", "CSS", "Vanilla Javascript"],
       "projType": "Team Project",
       "projImg": 3
