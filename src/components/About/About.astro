@@ -1,0 +1,26 @@
+---
+import Tile from "../GridTile.astro";
+import CoverImg from "./CoverImg.astro";
+import ContactInfo from "./ContactInfo.astro";
+import ProfileDescription from "./ProfileDescription.astro";
+import YearsOfExperience from "./YearsOfExperience.astro";
+import Location from "./Location.astro";
+---
+
+<section class="grid grid-cols-6 auto-rows-[172px] gap-4 w-full">
+   <Tile propClasses="xl:col-span-4 row-span-2 relative col-span-6">
+      <CoverImg />
+      <ContactInfo />
+   </Tile>
+   <Tile propClasses="xl:col-span-2 col-span-6 p-7 gap-2 delayed">
+      <ProfileDescription />
+   </Tile>
+   <Tile
+      propClasses="xl:col-span-1 col-span-3 items-center justify-center gap-2 delayed "
+   >
+      <YearsOfExperience />
+   </Tile>
+   <Tile propClasses="xl:col-span-1 col-span-3 delayed">
+      <Location />
+   </Tile>
+</section>
