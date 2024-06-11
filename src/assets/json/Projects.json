@@ -17,7 +17,7 @@
    },
    {
       "projName": "Patagon Barber",
-      "projUrl": "https://patagon-barber-frontend.vercel.app/",
+      "projUrl": "https://patagonbarber.vercel.app/",
       "projDesc": "A website build for a barber business.",
       "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
       "projType": "Freelance Project",
