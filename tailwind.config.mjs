@@ -7,6 +7,12 @@ export default {
          fontFamily: {
             outfit: ["Outfit", "sans-serif"],
          },
+         colors: {
+            "dark-tiles-color": "#161b1d",
+            "light-tiles-color": "#f0f3f4",
+            "dark-back-color": "#000000",
+            "light-back-color": "#ffffff",
+         },
       },
    },
    plugins: [],
