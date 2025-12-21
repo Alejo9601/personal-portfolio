@@ -2,25 +2,25 @@
    {
       "bgImg": 0,
       "logoImg": 0,
-      "eName": "Municipality of Veintiocho de Noviembre",
-      "rolName": "Software Engineer (Final Career Project)",
-      "dates": "Jan. 2018 - Mar. 2019",
+      "eName": "Municipalidad 28 de Noviembre",
+      "rolName": "Analista de Sistemas (Contrato de prácticas)",
+      "dates": "Enero 2018 - Marzo 2019",
       "pageLink": "https://web.facebook.com/28denoviembreoficial/?_rdc=1&_rdr"
    },
    {
       "bgImg": 1,
       "logoImg": 1,
-      "eName": "Provincial Education Council",
-      "rolName": "Professor of Applied Computer Science",
-      "dates": "May. 2019 - Present",
+      "eName": "Consejo Provincial de Educación",
+      "rolName": "Profesor de Informática Aplicada",
+      "dates": "Mayo 2019 - Presente",
       "pageLink": "https://educacionsantacruz.gov.ar/"
    },
    {
       "bgImg": 2,
       "logoImg": 2,
       "eName": "ZOURCE",
-      "rolName": "Freelance Entrepreneurship",
-      "dates": "Mar. 2022 - Present",
-      "pageLink": "https://zource.vercel.app"
+      "rolName": "Emprendimiento de Servicios Informáticos",
+      "dates": "Marzo 2022 - Presente",
+      "pageLink": "https://zource.com.ar"
    }
 ]
