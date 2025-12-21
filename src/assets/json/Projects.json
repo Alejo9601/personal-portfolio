@@ -2,33 +2,33 @@
    {
       "projName": "GiffyAll",
       "projUrl": "https://giffyall.vercel.app/",
-      "projDesc": "App to search funny gif´s using the official Giphy API.",
+      "projDesc": "Aplicación interactiva para buscar y visualizar GIFs a través de la API oficial de Giphy.",
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Project",
+      "projType": "Proyecto Personal",
       "projImg": 0
    },
    {
       "projName": "My Unsplashed",
       "projUrl": "https://myunsplashed.vercel.app/",
-      "projDesc": "A gallery to show a photographer´s work.",
+      "projDesc": "Galería web diseñada para exhibir el portafolio fotográfico de artistas visuales.",
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Personal Project",
+      "projType": "Proyecto Personal",
       "projImg": 1
    },
    {
       "projName": "Patagon Barber",
       "projUrl": "https://patagonbarber.vercel.app/",
-      "projDesc": "A website build for a barber business.",
+      "projDesc": "Página web profesional desarrollada para un negocio de barbería, con reservas y contacto en línea.",
       "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
-      "projType": "Freelance Project",
+      "projType": "Proyecto Freelance",
       "projImg": 2
    },
    {
       "projName": "Eccombuy",
       "projUrl": "https://ecommbuy.netlify.app/",
-      "projDesc": "An E-commerce web template for a sales business.",
-      "projTechs": ["HTML", "CSS", "Vanilla Javascript"],
-      "projType": "Team Project",
+      "projDesc": "Plantilla de comercio electrónico moderna, diseñada para negocios de ventas en línea con un enfoque en la usabilidad.",
+      "projTechs": ["HTML", "CSS", "JavaScript Vanilla"],
+      "projType": "Proyecto en Equipo",
       "projImg": 3
    }
 ]
