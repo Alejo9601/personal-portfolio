@@ -7,20 +7,26 @@ import YearsOfExperience from "./YearsOfExperience.astro";
 import LocationMap from "./LocationMap.astro";
 ---
 
-<section class="grid grid-cols-6 auto-rows-[minmax(172px,auto)] gap-4 w-full">
-   <Tile propClasses="col-span-6 lg:col-span-4 lg:row-span-2">
+<section
+   class="grid grid-cols-4 lg:grid-cols-6 auto-rows-[minmax(172px,190px)] gap-4 w-full"
+>
+   <Tile
+      propClasses="col-span-4 row-span-2 md:col-span-5 lg:col-span-4 lg:row-span-2"
+   >
       <CoverImg />
       <ContactInfo />
    </Tile>
-   <Tile propClasses="col-span-6 lg:col-span-2 p-7 gap-2 delayed">
+   <Tile propClasses="col-span-4 md:col-span-2 lg:col-span-2 p-7 gap-2 delayed">
       <ProfileDescription />
    </Tile>
    <Tile
-      propClasses="col-span-3 lg:col-span-1 items-center justify-center gap-2 delayed "
+      propClasses="col-span-2 md:col-span-1 lg:col-span-1 items-center justify-center gap-2 delayed "
    >
       <YearsOfExperience />
    </Tile>
-   <Tile propClasses="col-span-3 lg:col-span-1 delayed">
+   <Tile
+      propClasses="col-span-2 row-span-1 md:col-span-1 lg:col-span-1 delayed"
+   >
       <LocationMap />
    </Tile>
 </section>

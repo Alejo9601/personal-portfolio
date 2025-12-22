@@ -4,11 +4,16 @@ import cover2 from "../../assets/img/coveronthesnow-md.webp";
 import cover3 from "../../assets/img/coveronthesnow-sm.webp";
 ---
 
-<picture class="w-full h-full object-cover absolute">
+<picture class="w-full h-full">
    <source media="(width <= 500px)" srcset={cover3.src} />
    <source media="(width <= 768px)" srcset={cover2.src} />
-   <img src={cover.src} />
+   <img 
+      src={cover.src} 
+      class="w-full h-full object-cover"
+      alt=""
+   />
 </picture>
+
 
 <!-- <img
    src={cover.src}
