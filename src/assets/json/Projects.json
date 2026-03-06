@@ -16,8 +16,8 @@
       "projImg": 1
    },
    {
-      "projName": "Patagon Barber",
-      "projUrl": "https://patagonbarber.vercel.app/",
+      "projName": "Don Ribete",
+      "projUrl": "https://donribete.vercel.app/",
       "projDesc": "Página web profesional desarrollada para un negocio de barbería, con reservas y contacto en línea.",
       "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
       "projType": "Proyecto Freelance",
