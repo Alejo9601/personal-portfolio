@@ -1,34 +1,146 @@
 ---
-import Card from "./Card.astro";
 import SectionContainer from "./SectionContainer.astro";
 import Experiences from "../assets/json/Experiences.json";
-
-import proj1Img from "../assets/img/28Nov.webp";
-import proj2Img from "../assets/img/book.webp";
-import proj3Img from "../assets/img/programming.webp";
 
 import veitiochoNovLogo from "../assets/img/mun28nov.jpg";
 import santaCruzLogo from "../assets/img/EscudoProvSantaCruz.png";
 import zourceLogo from "../assets/img/logo.jpg";
 
-const images = [proj1Img, proj2Img, proj3Img];
 const logos = [veitiochoNovLogo, santaCruzLogo, zourceLogo];
 
-const description = "Mis experiencias más relevantes";
+interface ExperienceItem {
+   company: string;
+   role: string;
+   employmentType: string;
+   period: string;
+   location: string;
+   logoImg: number;
+   companyUrl: string;
+   tech: string[];
+   highlights: string[];
+}
+
+const description = "Trayectoria profesional, impacto y stack";
 const title = "Experiencia";
+const items = Experiences as ExperienceItem[];
+const accents = [
+   {
+      dot: "bg-cyan-500",
+      ring: "ring-cyan-500/30",
+      line: "bg-cyan-500/40",
+      panel: "from-cyan-500/10 to-transparent",
+      chip: "bg-cyan-500/15 text-cyan-800 dark:text-cyan-200",
+      link: "text-cyan-700 dark:text-cyan-300",
+   },
+   {
+      dot: "bg-emerald-500",
+      ring: "ring-emerald-500/30",
+      line: "bg-emerald-500/40",
+      panel: "from-emerald-500/10 to-transparent",
+      chip: "bg-emerald-500/15 text-emerald-800 dark:text-emerald-200",
+      link: "text-emerald-700 dark:text-emerald-300",
+   },
+   {
+      dot: "bg-orange-500",
+      ring: "ring-orange-500/30",
+      line: "bg-orange-500/40",
+      panel: "from-orange-500/10 to-transparent",
+      chip: "bg-orange-500/15 text-orange-800 dark:text-orange-200",
+      link: "text-orange-700 dark:text-orange-300",
+   },
+];
 ---
 
 <SectionContainer title={title} description={description}>
-   <div class="grid grid-cols-6 auto-rows-[260px] w-full gap-4">
+   <div class="flex flex-col gap-4 w-full">
       {
-         Experiences.map((exp) => (
-            <Card
-               bgImg={images[exp.bgImg].src}
-               logoImg={logos[exp.logoImg].src}
-               rolName={exp.rolName}
-               dates={exp.dates}
-               pageLink={exp.pageLink}
-            />
+         items.map((exp, index) => (
+            <article class="relative grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-4 w-full">
+               <div class="relative lg:pr-6 lg:text-right lg:border-r lg:border-black/10 lg:dark:border-white/10 text-black/70 dark:text-white/60 inactive animated delayed">
+                  <span
+                     class:list={[
+                        "hidden lg:block absolute top-1 right-[-8px] h-3 w-3 rounded-full ring-4",
+                        accents[index % accents.length].dot,
+                        accents[index % accents.length].ring,
+                     ]}
+                  />
+                  <p class="text-sm uppercase tracking-wide">{exp.period}</p>
+                  <p class="text-xs mt-1">{exp.location}</p>
+               </div>
+
+               <div class="rounded-3xl bg-light-tiles-color dark:bg-dark-tiles-color dark:text-white text-black p-6 inactive animated delayed relative overflow-hidden border border-black/5 dark:border-white/10">
+                  <div
+                     class:list={[
+                        "pointer-events-none absolute inset-0 bg-gradient-to-br",
+                        accents[index % accents.length].panel,
+                     ]}
+                  />
+                  <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                     <img
+                        class="w-16 h-16 rounded-xl object-cover border border-black/10 dark:border-white/10 relative z-[1]"
+                        src={logos[exp.logoImg].src}
+                        alt={exp.company}
+                     />
+
+                     <div class="flex-1 flex flex-col gap-3 min-w-0 relative z-[1]">
+                        <div class="flex flex-col gap-2">
+                           <div class="flex flex-wrap items-center gap-2">
+                              <h3 class="text-2xl font-bold leading-6">{exp.role}</h3>
+                              {
+                                 exp.period.includes("Present") && (
+                                    <span class="text-xs font-semibold px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">
+                                       Current
+                                    </span>
+                                 )
+                              }
+                           </div>
+                           <p class="text-base font-medium opacity-80">
+                              {exp.company} - {exp.employmentType}
+                           </p>
+                        </div>
+
+                        <ul class="list-disc pl-5 space-y-1 text-sm opacity-90">
+                           {exp.highlights.map((point) => <li>{point}</li>)}
+                        </ul>
+
+                        <div class="flex flex-wrap items-center gap-2">
+                           {exp.tech.map((tech) => (
+                              <span
+                                 class:list={[
+                                    "text-xs font-semibold px-2 py-1 rounded-md",
+                                    accents[index % accents.length].chip,
+                                 ]}
+                              >
+                                 {tech}
+                              </span>
+                           ))}
+                        </div>
+
+                        <a
+                           href={exp.companyUrl}
+                           target="_blank"
+                           class:list={[
+                              "w-fit text-sm font-semibold hover:underline",
+                              accents[index % accents.length].link,
+                           ]}
+                        >
+                           Company site
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               {
+                  index !== items.length - 1 && (
+                     <span
+                        class:list={[
+                           "hidden lg:block absolute left-[220px] top-[100%] h-4 w-px",
+                           accents[index % accents.length].line,
+                        ]}
+                     />
+                  )
+               }
+            </article>
          ))
       }
    </div>
