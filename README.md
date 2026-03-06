@@ -1,54 +1,107 @@
-# Astro Starter Kit: Basics
+# Alejandro Juarez Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+Personal portfolio website built with Astro and Tailwind CSS.
+
+## Overview
+
+This project showcases:
+
+- About/profile section
+- Work experience cards
+- Skills carousel
+- Project gallery
+- Contact links and CV download
+- Light/dark mode toggle
+
+## Tech Stack
+
+- Astro 4
+- Tailwind CSS 3
+- TypeScript
+- Vanilla JavaScript (small client-side interactions)
+
+## Requirements
+
+- Node.js `>=20`
+- npm
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Run development server:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+npm run dev
+```
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+The app runs at `http://localhost:4321`.
 
-## 🚀 Project Structure
+## Scripts
 
-Inside of your Astro project, you'll see the following folders and files:
+- `npm run dev`: start local dev server
+- `npm run start`: alias of `dev`
+- `npm run build`: type-check (`astro check`) and build static output
+- `npm run preview`: preview production build locally
+- `npm run astro`: run Astro CLI commands
+
+## Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+|-- public/
+|-- src/
+|   |-- assets/
+|   |   |-- css/
+|   |   |-- fonts/
+|   |   |-- img/
+|   |   `-- json/
+|   |-- components/
+|   |   `-- About/
+|   |-- js/
+|   |-- layouts/
+|   `-- pages/
+|-- astro.config.mjs
+|-- tailwind.config.mjs
+`-- package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Content Sources
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Most editable content is centralized in JSON files:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- `src/assets/json/Experiences.json`
+- `src/assets/json/Projects.json`
+- `src/assets/json/Skills.json`
 
-## 🧞 Commands
+## Styling and UI Behavior
 
-All commands are run from the root of the project, from a terminal:
+- Global styles and animations live in `src/assets/css/`.
+- Layout and shared page shell live in `src/layouts/Layout.astro`.
+- Section composition starts from `src/pages/index.astro`.
+- Client interactions:
+  - `src/js/darkModeListener.ts`
+  - `src/js/intersectionObserver.ts`
+  - `src/js/OnProjectHover.ts`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Build Output
 
-## 👀 Want to learn more?
+This is a static Astro site. Production files are generated in:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `dist/`
+
+## Deployment
+
+Any static hosting service can be used (Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc.):
+
+1. Run `npm run build`
+2. Deploy the `dist/` directory
+
+## Screenshots
+
+![Portfolio screenshot 1](src/assets/img/portfolio1.png)
+![Portfolio screenshot 2](src/assets/img/portfolio2.png)
