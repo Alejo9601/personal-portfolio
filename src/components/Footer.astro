@@ -1,4 +1,4 @@
----
+﻿---
 import EmailSVG from "./EmailSVG.astro";
 import LinkedInSVG from "./LinkedInSVG.astro";
 import Paragraph from "./Paragraph.astro";
@@ -8,13 +8,25 @@ import Paragraph from "./Paragraph.astro";
    class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-0 lg:justify-between px-10 h-40 w-full dark:bg-dark-tiles-color rounded-3xl dark:text-white text-black bg-light-tiles-color animated inactive delayed"
 >
    <div>
-      <Paragraph> Alejandro Juarez - Desarrollador Full Stack </Paragraph>
-      <Paragraph
-         >Pagina hecha con <span class="text-red-700 font-extrabold">Astro</span
-         >
-         y
-         <span class="text-yellow-500 font-extrabold">Vanilla Javascript</span>
-      </Paragraph>
+      <div data-lang="es">
+         <Paragraph> Alejandro Juarez - Desarrollador Full Stack </Paragraph>
+      </div>
+      <div data-lang="en" hidden>
+         <Paragraph> Alejandro Juarez - Full Stack Developer </Paragraph>
+      </div>
+
+      <div data-lang="es">
+         <Paragraph>
+            Pagina hecha con <span class="text-red-700 font-extrabold">Astro</span> y
+            <span class="text-yellow-500 font-extrabold">Vanilla Javascript</span>
+         </Paragraph>
+      </div>
+      <div data-lang="en" hidden>
+         <Paragraph>
+            Site built with <span class="text-red-700 font-extrabold">Astro</span> and
+            <span class="text-yellow-500 font-extrabold">Vanilla Javascript</span>
+         </Paragraph>
+      </div>
    </div>
    <div
       class="flex flex-row items-center justify-center w-full lg:w-auto lg:flex-col gap-3"
@@ -40,7 +52,8 @@ import Paragraph from "./Paragraph.astro";
          </a>
       </div>
       <Paragraph propClasses="hidden sm:inline">
-         Last update: March 2024
+         <span data-lang="es">Ultima actualizacion: Marzo 2024</span>
+         <span data-lang="en" hidden>Last update: March 2024</span>
       </Paragraph>
    </div>
 </footer>

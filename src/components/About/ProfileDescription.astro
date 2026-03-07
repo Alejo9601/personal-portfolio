@@ -1,12 +1,28 @@
----
+﻿---
 import Paragraph from "../Paragraph.astro";
 ---
 
-<span class="text-2xl font-bold">Sobre mí</span>
-<Paragraph propClasses="leading-5">
-   Analista de Sistemas con sólida formación en programación y experiencia
-   práctica en el desarrollo web. <br />
-   <span class="text-sm font-bold text-blue-700">#React.js </span>
-   <span class="text-sm font-bold text-green-700">#Node.js </span>
-   <span class="text-sm font-bold text-purple-700">#TailwindCSS </span>
-</Paragraph>
+<span class="text-2xl font-bold">
+   <span data-lang="es">Sobre mi</span>
+   <span data-lang="en" hidden>About me</span>
+</span>
+
+<div data-lang="es">
+   <Paragraph propClasses="leading-5">
+      Analista de Sistemas con solida formacion en programacion y experiencia practica en desarrollo web.
+      <br />
+      <span class="text-sm font-bold text-blue-700">#React.js </span>
+      <span class="text-sm font-bold text-green-700">#Node.js </span>
+      <span class="text-sm font-bold text-purple-700">#TailwindCSS </span>
+   </Paragraph>
+</div>
+
+<div data-lang="en" hidden>
+   <Paragraph propClasses="leading-5">
+      Systems Analyst with strong programming foundations and hands-on experience in web development.
+      <br />
+      <span class="text-sm font-bold text-blue-700">#React.js </span>
+      <span class="text-sm font-bold text-green-700">#Node.js </span>
+      <span class="text-sm font-bold text-purple-700">#TailwindCSS </span>
+   </Paragraph>
+</div>
