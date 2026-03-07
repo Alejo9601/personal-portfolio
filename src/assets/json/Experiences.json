@@ -1,47 +1,51 @@
-[
+﻿[
    {
       "company": "ZOURCE",
-      "role": "Full Stack Developer",
-      "employmentType": "Freelance",
-      "period": "Mar 2022 - Present",
+      "role": "Desarrollador Web",
+      "employmentType": "Profesional independiente",
+      "period": "2023 - Present",
       "location": "Santa Cruz, AR",
       "logoImg": 2,
       "companyUrl": "https://zource.com.ar",
-      "tech": ["React", "Node.js", "TypeScript", "Tailwind", "SQLite"],
+      "tech": ["React.js", "JavaScript", "Tailwind CSS", "Node.js", "SQLite", "Git"],
       "highlights": [
-         "Built and maintained websites for local businesses.",
-         "Implemented booking and contact flows focused on conversion.",
-         "Shipped responsive interfaces and reusable UI components."
-      ]
-   },
-   {
-      "company": "Consejo Provincial de Educacion",
-      "role": "Applied Informatics Teacher",
-      "employmentType": "Part-time",
-      "period": "May 2019 - Present",
-      "location": "Santa Cruz, AR",
-      "logoImg": 1,
-      "companyUrl": "https://educacionsantacruz.gov.ar/",
-      "tech": ["Programming Basics", "Office Tools", "Digital Literacy"],
-      "highlights": [
-         "Prepared practical curricula for technical secondary students.",
-         "Led project-based classes and collaborative assignments.",
-         "Adapted course content to mixed-skill classroom groups."
+         "Desarrolle soluciones web para negocios locales con foco en rendimiento, conversion y experiencia de usuario.",
+         "Implemente interfaces responsivas en React.js y Tailwind CSS, junto con logica de cliente en JavaScript.",
+         "Realice despliegues y soporte continuo, acortando tiempos de ajuste post-lanzamiento.",
+         "Proyecto destacado: Barberia Don Ribete (React.js, Node.js, SQLite)."
       ]
    },
    {
       "company": "Municipalidad 28 de Noviembre",
-      "role": "Systems Analyst Intern",
-      "employmentType": "Internship",
+      "role": "Desarrollador de Software",
+      "employmentType": "Contrato de practicas",
       "period": "Jan 2018 - Mar 2019",
       "location": "28 de Noviembre, AR",
       "logoImg": 0,
       "companyUrl": "https://web.facebook.com/28denoviembreoficial/?_rdc=1&_rdr",
-      "tech": ["IT Support", "Maintenance", "Documentation"],
+      "tech": ["Java", "Hibernate", "Swing", "MySQL", "MVC", "Documentacion tecnica"],
       "highlights": [
-         "Supported internal systems and daily technical operations.",
-         "Resolved hardware and software incidents for end users.",
-         "Documented recurring issues and support procedures."
+         "Desarrolle SIS-CONV para el seguimiento de convenios de pago de contribuyentes.",
+         "Participe en relevamiento y analisis de requisitos para traducir procesos operativos a funcionalidades.",
+         "Aplique arquitectura MVC para reducir complejidad y mejorar mantenibilidad del sistema.",
+         "Modele y administre base de datos MySQL, y documente procesos tecnicos y funcionales.",
+         "Colabore en revisiones de codigo incorporando feedback orientado a mejora continua."
+      ]
+   },
+   {
+      "company": "Consejo Provincial de Educacion",
+      "role": "Instructor de Programacion",
+      "employmentType": "Contratado",
+      "period": "May 2019 - Present",
+      "location": "Santa Cruz, AR",
+      "logoImg": 1,
+      "companyUrl": "https://educacionsantacruz.gov.ar/",
+      "tech": ["Programacion", "Algoritmos", "Desarrollo Web", "Mentoria tecnica", "Comunicacion tecnica"],
+      "highlights": [
+         "Planifique y dicte contenidos de programacion y algoritmos con enfoque practico orientado a proyectos.",
+         "Disene actividades tecnicas y evaluaciones para medir progreso en resolucion de problemas y calidad de codigo.",
+         "Guie el desarrollo y despliegue de aplicaciones base, reforzando fundamentos de arquitectura y buenas practicas.",
+         "Fortaleci habilidades de liderazgo, comunicacion tecnica y adaptabilidad en entornos de alta diversidad."
       ]
    }
 ]
