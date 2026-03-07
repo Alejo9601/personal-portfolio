@@ -1,4 +1,4 @@
----
+﻿---
 import MyProjects from "../assets/json/Projects.json";
 import SectionContainer from "./SectionContainer.astro";
 import GridTile from "./GridTile.astro";
@@ -9,8 +9,15 @@ import PatagonBarberImg from "../assets/img/PatagonBarber.webp";
 import EcommbuyImg from "../assets/img/Ecommbuy.webp";
 
 import ProjectDescription from "./ProjectDescription.astro";
-const description = "Mis proyectos más relevantes";
-const title = "Proyectos";
+
+const description = {
+   es: "Mis proyectos mas relevantes",
+   en: "My most relevant projects",
+};
+const title = {
+   es: "Proyectos",
+   en: "Projects",
+};
 ---
 
 <SectionContainer title={title} description={description}>

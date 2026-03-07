@@ -1,51 +1,117 @@
 ﻿[
    {
       "company": "ZOURCE",
-      "role": "Desarrollador Web",
-      "employmentType": "Profesional independiente",
-      "period": "2023 - Present",
+      "role": {
+         "es": "Desarrollador Web",
+         "en": "Web Developer"
+      },
+      "employmentType": {
+         "es": "Profesional independiente",
+         "en": "Freelance"
+      },
+      "period": {
+         "es": "2023 - Actualidad",
+         "en": "2023 - Present"
+      },
       "location": "Santa Cruz, AR",
       "logoImg": 2,
       "companyUrl": "https://zource.com.ar",
       "tech": ["React.js", "JavaScript", "Tailwind CSS", "Node.js", "SQLite", "Git"],
       "highlights": [
-         "Desarrolle soluciones web para negocios locales con foco en rendimiento, conversion y experiencia de usuario.",
-         "Implemente interfaces responsivas en React.js y Tailwind CSS, junto con logica de cliente en JavaScript.",
-         "Realice despliegues y soporte continuo, acortando tiempos de ajuste post-lanzamiento.",
-         "Proyecto destacado: Barberia Don Ribete (React.js, Node.js, SQLite)."
+         {
+            "es": "Desarrolle soluciones web para negocios locales con foco en rendimiento, conversion y experiencia de usuario.",
+            "en": "Built web solutions for local businesses with focus on performance, conversion, and user experience."
+         },
+         {
+            "es": "Implemente interfaces responsivas en React.js y Tailwind CSS, junto con logica de cliente en JavaScript.",
+            "en": "Implemented responsive interfaces with React.js and Tailwind CSS, plus client-side logic in JavaScript."
+         },
+         {
+            "es": "Realice despliegues y soporte continuo, acortando tiempos de ajuste post-lanzamiento.",
+            "en": "Handled deployments and continuous support, reducing post-launch adjustment time."
+         },
+         {
+            "es": "Proyecto destacado: Barberia Don Ribete (React.js, Node.js, SQLite).",
+            "en": "Featured project: Don Ribete Barbershop (React.js, Node.js, SQLite)."
+         }
       ]
    },
    {
       "company": "Municipalidad 28 de Noviembre",
-      "role": "Desarrollador de Software",
-      "employmentType": "Contrato de practicas",
-      "period": "Jan 2018 - Mar 2019",
+      "role": {
+         "es": "Desarrollador de Software",
+         "en": "Software Developer"
+      },
+      "employmentType": {
+         "es": "Contrato de practicas",
+         "en": "Internship Contract"
+      },
+      "period": {
+         "es": "Ene 2018 - Mar 2019",
+         "en": "Jan 2018 - Mar 2019"
+      },
       "location": "28 de Noviembre, AR",
       "logoImg": 0,
       "companyUrl": "https://web.facebook.com/28denoviembreoficial/?_rdc=1&_rdr",
-      "tech": ["Java", "Hibernate", "Swing", "MySQL", "MVC", "Documentacion tecnica"],
+      "tech": ["Java", "Hibernate", "Swing", "MySQL", "MVC", "Technical Documentation"],
       "highlights": [
-         "Desarrolle SIS-CONV para el seguimiento de convenios de pago de contribuyentes.",
-         "Participe en relevamiento y analisis de requisitos para traducir procesos operativos a funcionalidades.",
-         "Aplique arquitectura MVC para reducir complejidad y mejorar mantenibilidad del sistema.",
-         "Modele y administre base de datos MySQL, y documente procesos tecnicos y funcionales.",
-         "Colabore en revisiones de codigo incorporando feedback orientado a mejora continua."
+         {
+            "es": "Desarrolle SIS-CONV para el seguimiento de convenios de pago de contribuyentes.",
+            "en": "Developed SIS-CONV to track taxpayer payment agreements."
+         },
+         {
+            "es": "Participe en relevamiento y analisis de requisitos para traducir procesos operativos a funcionalidades.",
+            "en": "Participated in requirements analysis to translate operational flows into software features."
+         },
+         {
+            "es": "Aplique arquitectura MVC para reducir complejidad y mejorar mantenibilidad del sistema.",
+            "en": "Applied MVC architecture to reduce complexity and improve maintainability."
+         },
+         {
+            "es": "Modele y administre base de datos MySQL, y documente procesos tecnicos y funcionales.",
+            "en": "Modeled and managed MySQL databases, plus technical and functional documentation."
+         },
+         {
+            "es": "Colabore en revisiones de codigo incorporando feedback orientado a mejora continua.",
+            "en": "Collaborated in code reviews, incorporating feedback for continuous improvement."
+         }
       ]
    },
    {
       "company": "Consejo Provincial de Educacion",
-      "role": "Instructor de Programacion",
-      "employmentType": "Contratado",
-      "period": "May 2019 - Present",
+      "role": {
+         "es": "Instructor de Programacion",
+         "en": "Programming Instructor"
+      },
+      "employmentType": {
+         "es": "Contratado",
+         "en": "Contract"
+      },
+      "period": {
+         "es": "May 2019 - Actualidad",
+         "en": "May 2019 - Present"
+      },
       "location": "Santa Cruz, AR",
       "logoImg": 1,
       "companyUrl": "https://educacionsantacruz.gov.ar/",
-      "tech": ["Programacion", "Algoritmos", "Desarrollo Web", "Mentoria tecnica", "Comunicacion tecnica"],
+      "tech": ["Programming", "Algorithms", "Web Development", "Technical Mentoring", "Technical Communication"],
       "highlights": [
-         "Planifique y dicte contenidos de programacion y algoritmos con enfoque practico orientado a proyectos.",
-         "Disene actividades tecnicas y evaluaciones para medir progreso en resolucion de problemas y calidad de codigo.",
-         "Guie el desarrollo y despliegue de aplicaciones base, reforzando fundamentos de arquitectura y buenas practicas.",
-         "Fortaleci habilidades de liderazgo, comunicacion tecnica y adaptabilidad en entornos de alta diversidad."
+         {
+            "es": "Planifique y dicte contenidos de programacion y algoritmos con enfoque practico orientado a proyectos.",
+            "en": "Planned and taught programming and algorithms with a practical, project-based approach."
+         },
+         {
+            "es": "Disene actividades tecnicas y evaluaciones para medir progreso en resolucion de problemas y calidad de codigo.",
+            "en": "Designed technical exercises and assessments to measure progress in problem solving and code quality."
+         },
+         {
+            "es": "Guie el desarrollo y despliegue de aplicaciones base, reforzando fundamentos de arquitectura y buenas practicas.",
+            "en": "Guided development and deployment of foundational apps, reinforcing architecture and best practices."
+         },
+         {
+            "es": "Fortaleci habilidades de liderazgo, comunicacion tecnica y adaptabilidad en entornos de alta diversidad.",
+            "en": "Strengthened leadership, technical communication, and adaptability in highly diverse environments."
+         }
       ]
    }
 ]

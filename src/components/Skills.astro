@@ -1,9 +1,15 @@
----
+﻿---
 import SectionContainer from "./SectionContainer.astro";
 import SkillsCarousel from "./SkillsCarousel.astro";
 
-const description = "Tecnologías y herramientas con las que he trabajado";
-const title = "Habilidades";
+const description = {
+   es: "Tecnologias y herramientas con las que he trabajado",
+   en: "Technologies and tools I have worked with",
+};
+const title = {
+   es: "Habilidades",
+   en: "Skills",
+};
 ---
 
 <SectionContainer title={title} description={description}>

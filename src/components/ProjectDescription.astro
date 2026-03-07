@@ -1,6 +1,8 @@
----
-import LayersSVG from "./LayersSVG.astro";
-import ProjectLink from "./ProjectLink.astro";
+﻿---
+type BilingualText = {
+   es: string;
+   en: string;
+};
 
 const {
    projName,
@@ -8,20 +10,30 @@ const {
    projTechs,
    imgSource,
    projUrl,
-   projType = "WORK EXPERIENCE",
+   projType = { es: "Proyecto", en: "Project" },
 } = Astro.props;
+
+const projectType =
+   typeof projType === "string" ? { es: projType, en: projType } : (projType as BilingualText);
+const projectDescription =
+   typeof projDesc === "string" ? { es: projDesc, en: projDesc } : (projDesc as BilingualText);
 ---
 
 <div
    class="flex flex-col gap-3 w-full h-full top-0 left-0 p-8 relative on-hover-el"
 >
    <div class="flex gap-3 items-center opacity-50">
-      <LayersSVG />
-      <span class="font-semibold">{projType}</span>
+      <span class="font-semibold">
+         <span data-lang="es">{projectType.es}</span>
+         <span data-lang="en" hidden>{projectType.en}</span>
+      </span>
    </div>
    <div class="flex flex-col gap-1">
       <h3 class="text-2xl font-bold">{projName}</h3>
-      <p class="text-base opacity-70 leading-5">{projDesc}</p>
+      <p class="text-base opacity-70 leading-5">
+         <span data-lang="es">{projectDescription.es}</span>
+         <span data-lang="en" hidden>{projectDescription.en}</span>
+      </p>
       <div class="flex gap-2">
          {
             projTechs.map((tech: string) => (
@@ -30,7 +42,27 @@ const {
          }
       </div>
    </div>
-   <ProjectLink pageUrl={projUrl} />
+   <a
+      class="absolute rounded-full p-2 right-8 top-8 cursor-pointer border-2 border-slate-400 hover:bg-slate-400 hover:text-slate-900 opacity-70"
+      href={projUrl}
+      target="_blank"
+      aria-label="Link to project"
+   >
+      <svg
+         xmlns="http://www.w3.org/2000/svg"
+         width="18"
+         height="18"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+      >
+         <line x1="7" y1="17" x2="17" y2="7"></line>
+         <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+   </a>
    <img
       src={imgSource}
       alt="Project"

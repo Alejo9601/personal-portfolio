@@ -1,4 +1,4 @@
----
+﻿---
 import SectionContainer from "./SectionContainer.astro";
 import Experiences from "../assets/json/Experiences.json";
 
@@ -6,23 +6,35 @@ import veitiochoNovLogo from "../assets/img/mun28nov.jpg";
 import santaCruzLogo from "../assets/img/EscudoProvSantaCruz.png";
 import zourceLogo from "../assets/img/logo.jpg";
 
-const logos = [veitiochoNovLogo, santaCruzLogo, zourceLogo];
+type BilingualText = {
+   es: string;
+   en: string;
+};
 
 interface ExperienceItem {
    company: string;
-   role: string;
-   employmentType: string;
-   period: string;
+   role: BilingualText;
+   employmentType: BilingualText;
+   period: BilingualText;
    location: string;
    logoImg: number;
    companyUrl: string;
    tech: string[];
-   highlights: string[];
+   highlights: BilingualText[];
 }
 
-const description = "Trayectoria profesional, impacto y stack";
-const title = "Experiencia";
+const logos = [veitiochoNovLogo, santaCruzLogo, zourceLogo];
+
+const description = {
+   es: "Trayectoria profesional, impacto y stack",
+   en: "Professional background, impact, and stack",
+};
+const title = {
+   es: "Experiencia",
+   en: "Experience",
+};
 const items = Experiences as ExperienceItem[];
+
 const accents = [
    {
       dot: "bg-cyan-500",
@@ -60,17 +72,16 @@ const techColorByName: Record<string, string> = {
       "bg-cyan-500/15 text-cyan-800 dark:text-cyan-200 border border-cyan-500/30",
    SQLite:
       "bg-indigo-500/15 text-indigo-800 dark:text-indigo-200 border border-indigo-500/30",
-   "Programming Basics":
+   Programming:
       "bg-violet-500/15 text-violet-800 dark:text-violet-200 border border-violet-500/30",
-   "Office Tools":
+   Algorithms:
       "bg-amber-500/15 text-amber-800 dark:text-amber-200 border border-amber-500/30",
-   "Digital Literacy":
+   "Web Development":
       "bg-rose-500/15 text-rose-800 dark:text-rose-200 border border-rose-500/30",
-   "IT Support":
-      "bg-lime-500/15 text-lime-800 dark:text-lime-200 border border-lime-500/30",
-   Maintenance:
+   Java: "bg-lime-500/15 text-lime-800 dark:text-lime-200 border border-lime-500/30",
+   Hibernate:
       "bg-orange-500/15 text-orange-800 dark:text-orange-200 border border-orange-500/30",
-   Documentation:
+   Swing:
       "bg-fuchsia-500/15 text-fuchsia-800 dark:text-fuchsia-200 border border-fuchsia-500/30",
 };
 
@@ -83,6 +94,9 @@ const techPaletteCycle = [
 
 const getTechClass = (tech: string, techIndex: number) =>
    techColorByName[tech] ?? techPaletteCycle[techIndex % techPaletteCycle.length];
+
+const isCurrentRole = (period: BilingualText) =>
+   period.en.includes("Present") || period.es.includes("Actualidad");
 ---
 
 <SectionContainer title={title} description={description}>
@@ -98,7 +112,10 @@ const getTechClass = (tech: string, techIndex: number) =>
                         accents[index % accents.length].ring,
                      ]}
                   />
-                  <p class="text-sm uppercase tracking-wide">{exp.period}</p>
+                  <p class="text-sm uppercase tracking-wide">
+                     <span data-lang="es">{exp.period.es}</span>
+                     <span data-lang="en" hidden>{exp.period.en}</span>
+                  </p>
                   <p class="text-xs mt-1">{exp.location}</p>
                </div>
 
@@ -119,22 +136,32 @@ const getTechClass = (tech: string, techIndex: number) =>
                      <div class="flex-1 flex flex-col gap-3 min-w-0 relative z-[1]">
                         <div class="flex flex-col gap-2">
                            <div class="flex flex-wrap items-center gap-2">
-                              <h3 class="text-2xl font-bold leading-6">{exp.role}</h3>
+                              <h3 class="text-2xl font-bold leading-6">
+                                 <span data-lang="es">{exp.role.es}</span>
+                                 <span data-lang="en" hidden>{exp.role.en}</span>
+                              </h3>
                               {
-                                 exp.period.includes("Present") && (
+                                 isCurrentRole(exp.period) && (
                                     <span class="text-xs font-semibold px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">
-                                       Current
+                                       <span data-lang="es">Actual</span>
+                                       <span data-lang="en" hidden>Current</span>
                                     </span>
                                  )
                               }
                            </div>
                            <p class="text-base font-medium opacity-80">
-                              {exp.company} - {exp.employmentType}
+                              {exp.company} - <span data-lang="es">{exp.employmentType.es}</span>
+                              <span data-lang="en" hidden>{exp.employmentType.en}</span>
                            </p>
                         </div>
 
                         <ul class="list-disc pl-5 space-y-1 text-sm opacity-90">
-                           {exp.highlights.map((point) => <li>{point}</li>)}
+                           {exp.highlights.map((point) => (
+                              <li>
+                                 <span data-lang="es">{point.es}</span>
+                                 <span data-lang="en" hidden>{point.en}</span>
+                              </li>
+                           ))}
                         </ul>
 
                         <div class="flex flex-wrap items-center gap-2">
@@ -158,7 +185,8 @@ const getTechClass = (tech: string, techIndex: number) =>
                               accents[index % accents.length].link,
                            ]}
                         >
-                           Company site
+                           <span data-lang="es">Sitio de la empresa</span>
+                           <span data-lang="en" hidden>Company site</span>
                         </a>
                      </div>
                   </div>

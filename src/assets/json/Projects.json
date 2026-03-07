@@ -1,34 +1,58 @@
-[
+﻿[
    {
       "projName": "GiffyAll",
       "projUrl": "https://giffyall.vercel.app/",
-      "projDesc": "Aplicación interactiva para buscar y visualizar GIFs a través de la API oficial de Giphy.",
+      "projDesc": {
+         "es": "Aplicacion interactiva para buscar y visualizar GIFs a traves de la API oficial de Giphy.",
+         "en": "Interactive app to search and display GIFs using the official Giphy API."
+      },
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Proyecto Personal",
+      "projType": {
+         "es": "Proyecto Personal",
+         "en": "Personal Project"
+      },
       "projImg": 0
    },
    {
       "projName": "My Unsplashed",
       "projUrl": "https://myunsplashed.vercel.app/",
-      "projDesc": "Galería web diseñada para exhibir el portafolio fotográfico de artistas visuales.",
+      "projDesc": {
+         "es": "Galeria web disenada para exhibir el portafolio fotografico de artistas visuales.",
+         "en": "Web gallery designed to showcase visual artists' photography portfolios."
+      },
       "projTechs": ["React.js", "Styled Components"],
-      "projType": "Proyecto Personal",
+      "projType": {
+         "es": "Proyecto Personal",
+         "en": "Personal Project"
+      },
       "projImg": 1
    },
    {
       "projName": "Don Ribete",
       "projUrl": "https://donribete.vercel.app/",
-      "projDesc": "Página web profesional desarrollada para un negocio de barbería, con reservas y contacto en línea.",
+      "projDesc": {
+         "es": "Pagina web profesional desarrollada para una barberia, con reservas y contacto en linea.",
+         "en": "Professional website developed for a barbershop with online booking and contact flow."
+      },
       "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
-      "projType": "Proyecto Freelance",
+      "projType": {
+         "es": "Proyecto Freelance",
+         "en": "Freelance Project"
+      },
       "projImg": 2
    },
    {
       "projName": "Eccombuy",
       "projUrl": "https://ecommbuy.netlify.app/",
-      "projDesc": "Plantilla de comercio electrónico moderna, diseñada para negocios de ventas en línea con un enfoque en la usabilidad.",
+      "projDesc": {
+         "es": "Plantilla moderna de e-commerce para ventas online, con enfoque en usabilidad.",
+         "en": "Modern e-commerce template for online sales with a strong usability focus."
+      },
       "projTechs": ["HTML", "CSS", "JavaScript Vanilla"],
-      "projType": "Proyecto en Equipo",
+      "projType": {
+         "es": "Proyecto en Equipo",
+         "en": "Team Project"
+      },
       "projImg": 3
    }
 ]
