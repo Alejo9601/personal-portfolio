@@ -1,17 +1,17 @@
 ﻿[
    {
-      "projName": "GiffyAll",
-      "projUrl": "https://giffyall.vercel.app/",
+      "projName": "Don Ribete",
+      "projUrl": "https://donribete.vercel.app/",
       "projDesc": {
-         "es": "Aplicacion interactiva para buscar y visualizar GIFs a traves de la API oficial de Giphy.",
-         "en": "Interactive app to search and display GIFs using the official Giphy API."
+         "es": "Pagina web profesional desarrollada para una barberia, con reservas y contacto en linea.",
+         "en": "Professional website developed for a barbershop with online booking and contact flow."
       },
-      "projTechs": ["React.js", "Styled Components"],
+      "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
       "projType": {
-         "es": "Proyecto Personal",
-         "en": "Personal Project"
+         "es": "Proyecto Freelance",
+         "en": "Freelance Project"
       },
-      "projImg": 0
+      "projImg": 2
    },
    {
       "projName": "My Unsplashed",
@@ -28,18 +28,18 @@
       "projImg": 1
    },
    {
-      "projName": "Don Ribete",
-      "projUrl": "https://donribete.vercel.app/",
+      "projName": "GiffyAll",
+      "projUrl": "https://giffyall.vercel.app/",
       "projDesc": {
-         "es": "Pagina web profesional desarrollada para una barberia, con reservas y contacto en linea.",
-         "en": "Professional website developed for a barbershop with online booking and contact flow."
+         "es": "Aplicacion interactiva para buscar y visualizar GIFs a traves de la API oficial de Giphy.",
+         "en": "Interactive app to search and display GIFs using the official Giphy API."
       },
-      "projTechs": ["React.js", "Tailwind", "SQLite", "Typescript"],
+      "projTechs": ["React.js", "Styled Components"],
       "projType": {
-         "es": "Proyecto Freelance",
-         "en": "Freelance Project"
+         "es": "Proyecto Personal",
+         "en": "Personal Project"
       },
-      "projImg": 2
+      "projImg": 0
    },
    {
       "projName": "Eccombuy",
